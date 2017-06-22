@@ -24,23 +24,23 @@ console.log(operatedBy['900000023302']) // U Adenauerplatz
 console.log(operatedBy['900000110003']) // S Greifswalder Str.
 ```
 
-```
-{
+```js
+[{
 	id: '796',
 	name: 'Berliner Verkehrsbetriebe',
 	url: 'http://www.bvg.de',
 	timezone: 'Europe/Berlin',
 	language: 'de',
 	phone: null
-}
-{
+}]
+[{
 	id: '1',
 	name: 'S-Bahn Berlin GmbH',
 	url: 'http://www.s-bahn-berlin.de',
 	timezone: 'Europe/Berlin',
 	language: 'de',
 	phone: null
-}
+}]
 ```
 
 

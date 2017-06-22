@@ -76,15 +76,18 @@ Promise.all([
 	const operators = {} // by id
 	const stations = {} // by station id
 
-	for (let [id, _, operatorId] of allStations) {
-		const operator = allOperators[operatorId]
-		if (!operator) {
-			console.error(id + ' has an invalid operator id ' + operatorId)
-			continue
-		}
+	for (let [id, _, operatorIds] of allStations) {
+		for (let operatorId of operatorIds) {
+			const operator = allOperators[operatorId]
+			if (!operator) {
+				console.error(id + ' has an invalid operator id ' + operatorId)
+				continue
+			}
 
-		if (operators[operator.id]) operators[operator.id] = operator
-		stations[id] = operator.id
+			if (!operators[operator.id]) operators[operator.id] = operator
+			if (!stations[id]) stations[id] = []
+			stations[id].push(operator.id)
+		}
 	}
 
 	process.stdout.write(JSON.stringify({operators, stations}))
