@@ -1,6 +1,6 @@
 'use strict'
 
-const {fetch} = require('fetch-ponyfill')()
+const {fetch} = require('fetch-ponyfill')({Promise: require('pinkie-promise')})
 const csv = require('csv-parser')
 
 const showError = (err) => {
