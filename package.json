@@ -1,7 +1,7 @@
 {
 	"name": "vbb-station-operators",
 	"description": "Which operator services a Berlin public transport station?",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -26,7 +26,7 @@
 		"node": ">=6"
 	},
 	"devDependencies": {
-		"csv-parser": "^1.11.0",
+		"csv-parser": "^2.1.0",
 		"fetch-ponyfill": "^6.0.0",
 		"pinkie-promise": "^2.0.1",
 		"tap-min": "^1.2.1",
