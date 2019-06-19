@@ -49,7 +49,7 @@ const fetchOperators = () => {
 
 const fetchStations = () => {
 	// todo: @poldixd will change this to a new format soon!
-	return fetch('https://cdn.rawgit.com/poldixd/vbb-stations/master/all-stations-with-operators.json', {
+	return fetch('https://raw.githubusercontent.com/poldixd/vbb-stations/master/all-stations-with-operators.json', {
 		redirect: 'follow',
 		mode: 'cors',
 		headers: {
