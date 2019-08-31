@@ -9,7 +9,7 @@ const showError = (err) => {
 }
 
 const fetchOperators = () => {
-	return fetch('https://vbb-gtfs.jannisr.de/latest/agency.txt', {
+	return fetch('https://vbb-gtfs.jannisr.de/latest/agency.csv', {
 		redirect: 'follow',
 		mode: 'cors',
 		headers: {
